@@ -11,7 +11,7 @@ Provides the function `manup()` which given a [Web App Manifest](https://develop
     import manup from 'manup';
 
     const manifest = JSON.parse(fs.readFileSync('./manifest.json', 'utf8'));
-    const tags = manup(manifest);
+    const headElements = manup(manifest);
 
 
 Example `manifest.json`:
@@ -30,7 +30,7 @@ Example `manifest.json`:
       "theme_color": "#f44336"
     }
 
-Example output `tags` array:
+Example output `headElements` array:
 
     [
       [ 'meta', { name: 'theme-color', content: '#f44336' } ],
@@ -43,6 +43,24 @@ Example output `tags` array:
     ]
 
 Browsers will choose weather to use the `manifest.json` or the tags.
+
+
+### Usage with React
+
+    const Html = ({ headElements }) => (
+      <html lang='en-EN'>
+        <head>
+          <title>ManUp.js</title>
+          <link rel='manifest' href='/manifet.json' />
+          {headElements.map(([tag, props], idx) =>
+            React.createElement(tag, { ...props, key: idx })
+          )}
+        </head>
+        <body>
+          <div id='app' />
+        </body>
+      </html>
+    );
 
 
 ## Props
