@@ -1,6 +1,6 @@
 {
   "name": "manup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generates meta and link tags from your manifest.json",
   "main": "index.js",
   "repository": {

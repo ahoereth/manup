@@ -42,7 +42,7 @@ Example output `headElements` array:
       [ 'link', { rel: 'icon', sizes: '192x192', href: '/icon-192.png' } ]
     ]
 
-Browsers will choose weather to use the `manifest.json` or the tags.
+Browsers will choose whether to use the `manifest.json` or the tags.
 
 
 ### Usage with React
