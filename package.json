@@ -1,0 +1,23 @@
+{
+  "name": "manup",
+  "version": "1.0.0",
+  "description": "Generates meta and link tags from your manifest.json",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahoereth/manup.git"
+  },
+  "keywords": [
+    "manifest.json",
+    "meta",
+    "link",
+    "icons",
+    "app"
+  ],
+  "author": "Alexander Höreth",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ahoereth/manup/issues"
+  },
+  "homepage": "https://github.com/ahoereth/manup"
+}
